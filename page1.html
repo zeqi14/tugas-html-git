@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Panduan Seduh Kopi V60</title>
+<style>
+  @import url('https://fonts.googleapis.com/css2?family=Fraunces:ital,wght@0,600;0,700;1,500&family=Inter:wght@400;500;600&display=swap');
+ 
+  :root{
+    --bg: #241812;
+    --bg-soft: #2f2018;
+    --cream: #F1E7D8;
+    --cream-dim: #C9BBA6;
+    --gold: #C9A46A;
+    --teal: #5E8C7B;
+    --rule: rgba(241,231,216,0.14);
+  }
+ 
+  *{ box-sizing: border-box; }
+ 
+  body{
+    margin:0;
+    background: var(--bg);
+    color: var(--cream);
+    font-family: 'Inter', sans-serif;
+    line-height: 1.6;
+  }
+ 
+  .wrap{
+    max-width: 640px;
+    margin: 0 auto;
+    padding: 72px 24px 100px;
+  }
+ 
+  .kicker{
+    color: var(--teal);
+    font-size: 0.95rem;
+    margin: 0 0 10px;
+  }
+ 
+  h1{
+    font-family: 'Fraunces', serif;
+    font-weight: 700;
+    font-size: clamp(2.2rem, 6vw, 3.2rem);
+    line-height: 1.08;
+    margin: 0 0 18px;
+    color: var(--cream);
+  }
+ 
+  .lede{
+    color: var(--cream-dim);
+    font-size: 1.08rem;
+    max-width: 46ch;
+    margin: 0 0 48px;
+  }
+ 
+  h2{
+    font-family: 'Fraunces', serif;
+    font-style: italic;
+    font-weight: 500;
+    font-size: 1.4rem;
+    color: var(--gold);
+    margin: 56px 0 20px;
+  }
+ 
+  .tools{
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 12px 20px;
+  }
+ 
+  .tools li{
+    border-top: 1px solid var(--rule);
+    padding-top: 10px;
+    font-size: 0.98rem;
+    color: var(--cream-dim);
+  }
+ 
+  .tools li b{ color: var(--cream); font-weight: 500; }
+ 
+  .steps{
+    counter-reset: step;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+ 
+  .steps li{
+    counter-increment: step;
+    position: relative;
+    padding: 22px 0 22px 52px;
+    border-top: 1px solid var(--rule);
+  }
+ 
+  .steps li:last-child{ border-bottom: 1px solid var(--rule); }
+ 
+  .steps li::before{
+    content: counter(step);
+    position: absolute;
+    left: 0;
+    top: 22px;
+    font-family: 'Fraunces', serif;
+    font-weight: 600;
+    font-size: 1.1rem;
+    color: var(--gold);
+    width: 32px;
+  }
+ 
+  .steps strong{
+    display: block;
+    color: var(--cream);
+    font-size: 1.05rem;
+    margin-bottom: 4px;
+  }
+ 
+  .steps span{
+    color: var(--cream-dim);
+    font-size: 0.96rem;
+  }
+ 
+  .tip{
+    margin-top: 48px;
+    padding: 20px 22px;
+    border-left: 2px solid var(--teal);
+    background: var(--bg-soft);
+    font-size: 0.96rem;
+    color: var(--cream-dim);
+  }
+ 
+  .tip b{ color: var(--teal); }
+ 
+  footer{
+    margin-top: 64px;
+    font-size: 0.85rem;
+    color: var(--cream-dim);
+    opacity: 0.6;
+  }
+ 
+  a{ color: var(--teal); }
+ 
+  @media (max-width: 480px){
+    .tools{ grid-template-columns: 1fr; }
+  }
+</style>
+</head>
+<body>
+  <div class="wrap">
+    <p class="kicker">Panduan singkat</p>
+    <h1>Seduh Kopi V60 Tanpa Ribet</h1>
+    <p class="lede">Metode pour-over paling gampang dipelajari tapi hasilnya tetap bisa se-enak kopi kafe. Cukup 5 langkah.</p>
+ 
+    <h2>Yang perlu disiapin</h2>
+    <ul class="tools">
+      <li><b>15g</b> kopi giling medium-fine</li>
+      <li><b>250ml</b> air panas (92–96°C)</li>
+      <li>Dripper V60 &amp; kertas filter</li>
+      <li>Timer &amp; timbangan</li>
+    </ul>
+ 
+    <h2>Langkah-langkah</h2>
+    <ol class="steps">
+      <li>
+        <strong>Bilas filter</strong>
+        <span>Pasang filter, bilas pakai air panas biar bau kertas hilang, terus buang airnya.</span>
+      </li>
+      <li>
+        <strong>Masukin kopi</strong>
+        <span>Tuang kopi giling ke filter, ratakan permukaannya biar ekstraksinya merata.</span>
+      </li>
+      <li>
+        <strong>Bloom 30 detik</strong>
+        <span>Tuang air sekitar 40ml, biarkan kopi "mekar" selama 30 detik sebelum lanjut.</span>
+      </li>
+      <li>
+        <strong>Tuang bertahap</strong>
+        <span>Tuang sisa air pelan-pelan secara melingkar, sampai total 250ml, sekitar menit ke-2.</span>
+      </li>
+      <li>
+        <strong>Tunggu habis menetes</strong>
+        <span>Biarkan air turun semua sampai dripper kosong, total waktu sekitar 3 menit.</span>
+      </li>
+    </ol>
+ 
+    <div class="tip"><b>Tips:</b> kalau rasanya terlalu pahit, giling kopi lebih kasar. Kalau terlalu asam/encer, giling lebih halus.</div>
+ 
+    <footer>Halaman individu — dibuat untuk tugas kolaborasi Git.</footer>
+  </div>
+</body>
+</html>
+ 
